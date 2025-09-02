@@ -1,16 +1,23 @@
 /* Custom styling untuk dokumentasi */
 .wy-side-nav-search {
-    background-color: #343131;
+    background-color: #2980b9;
 }
 
 .wy-nav-top {
-    background: #343131;
+    background: #2980b9;
 }
 
 /* Code block styling */
-pre {
-    border-left: 4px solid #343131;
-    background-color: #f8f8f8;
+code {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+/* Button styling */
+.copybtn {
+    background-color: #2980b9;
 }
 
 /* Table styling */
@@ -19,6 +26,12 @@ table {
     width: 100%;
 }
 
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
 th {
-    background-color: #f3f6f6;
+    background-color: #f2f2f2;
 }

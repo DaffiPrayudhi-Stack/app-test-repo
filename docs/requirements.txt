@@ -1,4 +1,5 @@
-sphinx==7.3.7
-sphinx-rtd-theme==2.0.0
-# Hapus sphinxcontrib-phpdomain jika tidak critical
-# sphinx-autoapi==2.1.0
+sphinx==5.3.0
+sphinx-rtd-theme==1.3.0
+sphinx-copybutton==0.5.2
+sphinx-design==0.5.0
+sphinxcontrib-phpdomain==0.8.1

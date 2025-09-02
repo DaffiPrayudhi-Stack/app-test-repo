@@ -7,24 +7,15 @@ Nama Project Documentation
    
    installation
    configuration
-   quickstart
+   usage
 
 .. toctree::
    :maxdepth: 2
-   :caption: Usage Guide
-   
-   usage/controllers
-   usage/models
-   usage/views
-   usage/database
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
+   :caption: API Documentation
    
    api/controllers
    api/models
-   api/helpers
+   api/libraries
 
 .. toctree::
    :maxdepth: 1

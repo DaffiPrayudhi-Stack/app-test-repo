@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
+from datetime import datetime
 
-# Tambahkan path ke sistem
+# Add project root to path untuk autodoc
 sys.path.insert(0, os.path.abspath('..'))
 sys.path.insert(0, os.path.abspath('../application'))
 
 # -- Project information -----------------------------------------------------
-project = 'FingerPrint Access'
-copyright = '2025, SSM'
-author = 'Sinar Sakti'
-release = '1.0'
+project = 'SSM Project'
+copyright = f'{datetime.now().year}, Sinar Sakti'
+author = 'SSM'
+
+release = '1.0.0'
+version = '1.0'
 
 # -- General configuration ---------------------------------------------------
 extensions = [
@@ -18,10 +21,15 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.todo',
     'sphinx.ext.napoleon',
-    'sphinxcontrib.phpdomain',
+    'sphinx_copybutton',
+    'sphinx_design',
 ]
 
-# Template dan theme
+# Napoleon settings untuk Google-style docstrings
+napoleon_google_docstring = True
+napoleon_include_init_with_doc = True
+
+# Template settings
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 master_doc = 'index'
@@ -32,5 +40,19 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_js_files = ['custom.js']
 
-# -- Options for TODOs -------------------------------------------------------
+# Theme options
+html_theme_options = {
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': True,
+    'style_nav_header_background': '#2980b9',
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
+
+# -- Options for TODO extension ----------------------------------------------
 todo_include_todos = True
