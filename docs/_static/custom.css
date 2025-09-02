@@ -1,0 +1,24 @@
+/* Custom styling untuk dokumentasi */
+.wy-side-nav-search {
+    background-color: #343131;
+}
+
+.wy-nav-top {
+    background: #343131;
+}
+
+/* Code block styling */
+pre {
+    border-left: 4px solid #343131;
+    background-color: #f8f8f8;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f3f6f6;
+}
